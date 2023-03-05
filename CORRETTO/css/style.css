@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: marcellus;
+    src: url(/fonts/MarcellusSC-Regular.ttf);
+}
+
+@font-face {
+    font-family: light;
+    src: url(/fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family: regular;
+    src: url(/fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: medium;
+    src: url(/fonts/OpenSans-Medium.ttf);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 695;
+    margin-top: 1rem;
+}
+
+.fixed{
+    position: fixed;
+    width: 100%;
+}
+
+.logo{
+    width: 10%;
+    margin-top: 0.5rem;
+    margin-left: 3rem;
+}
+
+.logo img{
+    width: 100%;
+}
+
+nav{
+    width: 75%;
+    margin-top: 2rem;
+    text-align: right;
+    position: absolute;
+    left: 12%;
+}
+
+nav a{
+    text-decoration: none;
+    margin: 0 1.4rem;
+    font-family: marcellus;
+    color: white;
+    position: relative;
+}
+
+nav a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -4px;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.static::before{
+    width: 100%;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+
+.icons{
+    width: 15%;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    text-align: right;
+}
+
+.icons i{
+    margin: 0 0.6rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.icons i:hover{
+    opacity: 0.6;
+}
+
+.position{
+    position: relative;
+}
+
+.icons span{
+    position: absolute;
+    top: -70%;
+    right: -60%;
+    font-size: 15px;
+    font-family: light;
+}
+
+.home{
+    background-image: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/home-1-slider-image-1.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 17.8rem 0;
+    position: relative;
+    height: 100vh;
+
+}
+
+.home .logo{
+    position: absolute;
+    top: 16%;
+    left: 64%;
+}
+
+.home .text h1{
+    font-size: 54px;
+    color: white;
+    font-family: marcellus;
+    text-align: right;
+    padding-right: 6rem;
+    letter-spacing: 8px;
+}
+
+.home .text{
+    position: relative;
+}
+
+.home .text img{
+    position: absolute;
+    top: 130%;
+    left: 67%;
+    width: 160px;
+}
+
+.home .text p{
+    text-align: center;
+    width: 45%;
+    font-size: 16px;
+    font-family: regular;
+    color: white;
+    position: absolute;
+    top: 180%;
+    left: 50%;
+    line-height: 1.6rem;
+}
+
+.home .text a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: medium;
+    letter-spacing: 1px;
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 20px 40px;
+    position: absolute;
+    top: 300%;
+    left: 67%;
+    transition: .5s;
+}
+
+.home .text a:hover{
+    background-color: burlywood;
+    border-color: burlywood;
+}
+
+.herald{
+    background-image: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/new-new-h1-bacground-img-3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.herald h1{
+    font-size: 43px;
+    font-family: marcellus;
+    color: #262626;
+    letter-spacing: 4px;
+    padding-top: 7rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.herald .header{
+    position: relative;
+}
+
+.herald .header img{
+    position: absolute;
+    left: 44%;
+}
+
+.herald .header p{
+    font-size: 18px;
+    text-align: center;
+    font-family: light;
+    width: 35%;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.herald .body{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 7rem;
+}
+
+.herald .box{
+    width: 31%;
+}
+
+.herald .image img{
+    width: 100%;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+
+.herald .image{
+    margin-bottom: 2rem;
+}
+
+.herald .text .first{
+    text-decoration: none;
+    font-family: marcellus;
+    font-size: 20px;
+    color: #262626;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.herald .first:hover{
+    color: rgb(190, 147, 90);
+}
+
+.herald .text{
+    margin-bottom: 8rem;
+}
+
+.herald .text p{
+    color: #656565;
+    margin: 1rem 0;
+    font-size: 15px;
+    font-family: light;
+    line-height: 1.6rem;
+}
+
+.herald .text .second{
+    font-size: 14px;
+    color: #262626;
+    font-family: medium;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding-left: 0.8rem;
+    cursor: pointer;
+    position: relative;
+    transition: 0.4s;
+}
+
+.herald .second::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 1px;
+    background-color: #262626;
+    top: 50%;
+    left: 0;
+    transition: 0.4s;
+}
+
+.herald .second:hover{
+    color: rgb(190, 147, 90);
+    padding-left: 1.2rem;
+}
+
+.herald .second:hover::before{
+    background-color: rgb(190, 147, 90);
+    width: 12px;
+}
+
+.shop{
+    background-image: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-bacground-img-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.shop h1{
+    font-size: 43px;
+    font-family: marcellus;
+    color: #262626;
+    letter-spacing: 4px;
+    padding-top: 7rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.shop .header{
+    position: relative;
+}
+
+.shop .header img{
+    position: absolute;
+    left: 44%;
+}
+
+.shop .header p{
+    font-size: 18px;
+    text-align: center;
+    font-family: light;
+    width: 35%;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.shop .body{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 7rem;
+}
+
+.shop .box{
+    width: 22%;
+    position: relative;
+    margin-bottom: 6rem;
+}
+
+.shop .image img{
+    width: 100%;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+
+.shop .box a{
+    text-decoration: none;
+}
+
+.shop .click{
+    border: 1px solid rgb(190, 147, 90);
+    background-color: rgb(190, 147, 90);
+    padding: 15px 30px;
+    font-size: 14px;
+    font-family: medium;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 34%;
+    left: 17%;
+    opacity: 0;
+}
+
+.shop .click a{
+    color: white;
+}
+
+.shop .image{
+    transition: 0.5s;
+}
+
+.shop .image:hover img{
+    opacity: 0.3;
+}
+
+.shop .image:hover .click{
+    opacity: 1;
+}
+
+.shop .click:hover{
+    background-color: black;
+    border-color: black;
+}
+
+.shop .name{
+    font-size: 20px;
+    font-family: marcellus;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.shop .name a{
+    color: #262626;
+    transition: 0.5s;
+}
+
+.shop .name a:hover{
+    color: rgb(190, 147, 90);
+}
+
+.shop .box p{
+    font-size: 18px;
+    color: #777777;
+    font-family: light;
+    margin-top: 0.5rem;
+    text-align: center;
+}
